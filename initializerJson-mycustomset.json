@@ -1,0 +1,30 @@
+[
+    {
+        "httpRequest" : 
+        {
+            "method" : "GET",
+            "path" : "/api/v1/mycustom.*",
+            "queryStringParameters" : 
+            {
+                "code" : ["10969"]
+            }
+        },
+        "httpResponse" : 
+        {
+            "body" : "{\"mycustom\": 10969}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest" : 
+        {
+            "method" : "GET",
+            "path" : "/api/v1/mycustom.*"
+        },
+        "httpResponse" : 
+        {
+            "body" : "{\"hey - no parms make me sad\": :(}",
+            "statusCode": 200
+        }
+    }
+]

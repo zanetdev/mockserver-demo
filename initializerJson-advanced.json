@@ -1,0 +1,29 @@
+[
+    {
+        "httpRequest": {
+            "path": "/dropconnection"
+          },
+          "httpError": {
+            "dropConnection": true
+          }
+    },
+    {
+        "httpRequest": {
+          "path": "/javascripttemplate"
+        },
+        "httpResponseTemplate": {
+            "template": "return {'statusCode': 200, 'headers': {'Date': [Date()]}, 'body': {method: request.method, path: request.path, body: request.body}};",
+            "templateType": "JAVASCRIPT"
+        }
+    },
+    {
+        "httpRequest": {
+          "path": "/javascripttemplate2"
+        },
+        "httpResponseTemplate": {
+            "template": "return {'statusCode': 200, 'headers': {'Date': [Date()]}, 'body': {method: request.method, path: request.path, body: request.body, userid: request.queryStringParameters['userid'] }};",
+            "templateType": "JAVASCRIPT"
+        }
+    }
+    
+]

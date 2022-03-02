@@ -1,0 +1,18 @@
+[
+    {
+        "httpRequest" : 
+        {
+            "method" : "GET",
+            "path" : "/api/v1/weather",
+            "queryStringParameters" : 
+            {
+                "code" : ["10969"]
+            }
+        },
+        "httpResponse" : 
+        {
+            "body" : "{\"weather\": 20.5}",
+            "statusCode": 200
+        }
+    }
+]
